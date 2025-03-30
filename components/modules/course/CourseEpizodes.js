@@ -24,7 +24,7 @@ const CourseEpizodes = ({courseEpizodes}) => {
           style={{fontSize:"14px" , color:"#464749" , 
           fontFamily:"KalamehWeb-Medium"}} >برای مشاهده هر قسمت، روی آن ضربه بزنید تا کشو باز شود</span>
            {
-            courseEpizodes.map( i => <EpizodeAccordian caption={i.caption} videoSrc={i.videoSrc} />)
+            courseEpizodes.map( i => <EpizodeAccordian key={i.caption} caption={i.caption} videoSrc={i.videoSrc} />)
            }
         </div>
     );
