@@ -13,7 +13,7 @@ const CoursesSection = () => {
                     <Card
                      slug={`/courses/basicWord`}
                      coverPhoto={`/images/courses/termic/coverphoto.jpg`}
-                     title={`دوره Word مقدماتی`}
+                     title={`آموزش ورد مقدماتی`}
                      caption={"در دوره مقدماتی ورد، اصول اولیه و کاربردهای اصلی Microsoft Word را می‌آموزید و مهارت‌های لازم برای ایجاد و ویرایش اسناد را کسب می‌کنید..."}
                      buttonText="مشاهده ی دوره"
                      />

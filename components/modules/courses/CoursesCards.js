@@ -11,10 +11,10 @@ const CoursesCards = () => {
                 <div className="row justify-content-center row-cols-xxl-4 row-cols-lg-2 row-cols-sm-1 row-cols-md-2 row-cols-xs-1">
                     <div className='col-sm d-flex justify-content-center'>
                     <Card
-                     slug={`/courses/termic`}
+                     slug={`/courses/basicWord`}
                      coverPhoto={`/images/courses/termic/coverphoto.jpg`}
-                     title={`دوره های ترمیک و فشرده`}
-                     caption={"در این دوره زبان انگلیسی در کنار تدریس هر 4 مهارت اصلی زبان انگلیسی شامل:        Reading، Writing، Listening، Speaking و زیرمهارت های ..."}
+                     title={`آموزش ورد مقدماتی`}
+                     caption={"در دوره مقدماتی ورد، اصول اولیه و کاربردهای اصلی Microsoft Word را می‌آموزید و مهارت‌های لازم برای ایجاد و ویرایش اسناد را کسب می‌کنید..."}
                      buttonText="مشاهده ی دوره"
                      />
                     </div>
