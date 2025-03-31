@@ -7,15 +7,16 @@ import CourseTemplate from '@/components/modules/course/CourseTemplate';
 import testData from '@/assets/Tests/sampleTest';
 
 const BasicWord = () => {
-    const courseTestData = {
+    const courseData = {
         courseName:"آموزش ورد مقدماتی",
         coursePublishDate:'8 فروردین 1404',
-        courseTumbnailSrc:"/images/public.png",
+        courseTumbnailSrc:"/images/courses/basicWord/Tumbnail.png",
         courseCaption:"دوره مقدماتی ورد یک آموزش کاربردی برای آشنایی با اصول اولیه Microsoft Word است. در این دوره، معلمان یاد می‌گیرند چگونه اسناد متنی ایجاد و ویرایش کنند، تنظیمات صفحه را مدیریت کنند، از ابزارهای قالب‌بندی استفاده کنند و جداول و تصاویر را به متن اضافه کنند.\n<br />این دوره به‌صورت گام‌به‌گام طراحی شده تا افراد بدون پیش‌زمینه قبلی نیز بتوانند به‌راحتی مهارت‌های موردنیاز را کسب کنند. با شرکت در این دوره، توانایی کار با یکی از پرکاربردترین نرم‌افزارهای اداری را خواهید یافت و می‌توانید محتوای آموزشی خود را حرفه‌ای‌تر تنظیم کنید.",
         courseQuestions: testData.questions,
         courseSlug:"/courses/basicWord",
         courseTime:"1:25:45",
         courseVideos:"15",
+        courseCoverPhoto:"/images/courses/basicWord/Tumbnail.png",
         courseEpizodes:[
             {caption:"قسمت اول: معرفی دوره" , src:"/"} , 
             {caption:"قسمت اول: نصب آفیس 2024" , src:"/"} , 
@@ -55,7 +56,7 @@ const BasicWord = () => {
                 <Head>
                 <title>دوره Word مقدماتی | سامانه یادگیری مستمر دبستان شهید جهان‌آرا</title>
                 </Head>
-                {localSign ? <CourseTemplate courseData={courseTestData} /> : <Signup localSign={localSign} setLocalSign={setLocalSign} />}
+                {localSign ? <CourseTemplate courseData={courseData} /> : <Signup localSign={localSign} setLocalSign={setLocalSign} />}
             </div>
         </div>
     );

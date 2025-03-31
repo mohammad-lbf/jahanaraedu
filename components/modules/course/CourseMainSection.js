@@ -3,7 +3,7 @@ import CourseAuthor from './CourseAuthor';
 import CourseTumbnailContainer from './CourseTumbnailContainer';
 import CourseContent from './CourseContent';
 
-const CourseMainSection = ({testStarted , setTestStarted , testFinished , setTestFinished , courseName,coursePublishDate,courseTumbnailSrc,courseCaption,courseQuestions,courseSlug,courseTime,courseVideos,courseEpizodes}) => {
+const CourseMainSection = ({testStarted , courseCoverPhoto, setTestStarted , testFinished , setTestFinished , courseName,coursePublishDate,courseTumbnailSrc,courseCaption,courseQuestions,courseSlug,courseTime,courseVideos,courseEpizodes}) => {
     
 
     return (
@@ -31,7 +31,8 @@ const CourseMainSection = ({testStarted , setTestStarted , testFinished , setTes
                 courseSlug={courseSlug}
                 courseTime={courseTime}
                 courseVideos={courseVideos}
-                courseEpizodes={courseEpizodes}  
+                courseEpizodes={courseEpizodes}
+                courseCoverPhoto={courseCoverPhoto}  
                 />
         </div>
     );

@@ -31,9 +31,9 @@ export default function CertificateGenerator({ reportData }) {
     });
 
     firstPage.drawText(reportData.courseName , {
-        x: 257,
+        x: 253,
         y: 271,
-        size: 14,
+        size: 13,
         font: customFont,
         color: rgb(0, 0, 0),
       });

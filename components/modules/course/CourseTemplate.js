@@ -18,6 +18,7 @@ const CourseTemplate = ({courseData}) => {
         courseSlug,
         courseTime,
         courseVideos,
+        courseCoverPhoto,
         courseEpizodes
     } = courseData;
     console.log(courseQuestions)
@@ -53,6 +54,7 @@ const CourseTemplate = ({courseData}) => {
                                 courseTime={courseTime}
                                 courseVideos={courseVideos}
                                 courseEpizodes={courseEpizodes}
+                                courseCoverPhoto={courseCoverPhoto}
                                 />
                             </div>
                         </div>

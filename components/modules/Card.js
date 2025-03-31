@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import isUserNameInLocalStorage from '../../assets/functions/localStorageChecker';
 
-const Card = ({title , caption, slug , buttonText , coverPhoto}) => {
+const Card = ({title , caption, slug , buttonText , coverPhoto , finishStatus}) => {
     return (
             <div style={{width:"350px" , overflow:"hidden"}} className='lbf-card border-gray-800 bg-gray-850 mb-3'>
             <div className='lbf-card-image-article'>
@@ -10,7 +10,7 @@ const Card = ({title , caption, slug , buttonText , coverPhoto}) => {
                  className='w-100 border'
                  width={1080} height={170} 
                  alt={title}
-                 src={'/images/public.png'} />
+                 src={coverPhoto} />
             </div>
             <div className='p-relative'>
                 <div className='lbf-card-author-image'>
@@ -31,7 +31,7 @@ const Card = ({title , caption, slug , buttonText , coverPhoto}) => {
                     </div>
                 </div>
             </div>
-            <Link style={{borderRadius:"0" , fontFamily:"KalamehWeb-Bold" , opacity:title == "تعیین سطح عمومی" && "0.65" , pointerEvents:title == "تعیین سطح عمومی" && "none"}} className={`btn-main-2 text-center d-inline-block text-white w-100`} href={`${slug}`}>{buttonText}</Link>
+            <Link style={{borderRadius:"0" , fontFamily:"KalamehWeb-Bold" , opacity:!finishStatus && "0.65" , pointerEvents:!finishStatus && "none"}} className={`btn-main-2 text-center d-inline-block text-white w-100`} href={`${slug}`}>{buttonText}</Link>
         </div>
     );
 };
