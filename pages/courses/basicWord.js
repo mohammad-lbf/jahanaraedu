@@ -25,8 +25,10 @@ const BasicWord = () => {
             {caption:"قسمت پنجم: سربرگ Home - قسمت اول" , src:"https://jahanaraedu.storage.c2.liara.space/basic-word-course/%D9%82%D8%B3%D9%85%D8%AA%20%D9%BE%D9%86%D8%AC%D9%85.mp4"} , 
             {caption:"قسمت ششم: سربرگ Home - قسمت دوم" , src:"https://jahanaraedu.storage.c2.liara.space/basic-word-course/%D9%82%D8%B3%D9%85%D8%AA%20%D8%B4%D8%B4%D9%85.mp4"} , 
             {caption:"قسمت هفتم: سربرگ insert - قسمت اول" , src:"https://jahanaraedu.storage.c2.liara.space/basic-word-course/%D9%82%D8%B3%D9%85%D8%AA%20%D9%87%D9%81%D8%AA%D9%85.mp4"} , 
-            {caption:"قسمت هشتم: سربرگ inset - قسمت دوم" , src:"https://jahanaraedu.storage.c2.liara.space/basic-word-course/%D9%82%D8%B3%D9%85%D8%AA%20%D9%87%D8%B4%D8%AA%D9%85.mp4"} , 
+            {caption:"قسمت هشتم: سربرگ insret - قسمت دوم" , src:"https://jahanaraedu.storage.c2.liara.space/basic-word-course/%D9%82%D8%B3%D9%85%D8%AA%20%D9%87%D8%B4%D8%AA%D9%85.mp4"} , 
             {caption:"قسمت نهم: سربرگ Design و Draw" , src:"https://jahanaraedu.storage.c2.liara.space/basic-word-course/%D9%82%D8%B3%D9%85%D8%AA%20%D9%86%D9%87%D9%85.mp4"} , 
+            {caption:"قسمت دهم: سربرگ Layout و Refrences" , src:"https://jahanaraedu.storage.c2.liara.space/basic-word-course/%D9%82%D8%B3%D9%85%D8%AA%20%D8%AF%D9%87%D9%85.mp4"} , 
+            {caption:"قسمت یازدهم: مرور نکات و جمع بندی" , src:""} , 
         ]
     }
     const router = useRouter();
