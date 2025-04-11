@@ -4,7 +4,7 @@ import isUserNameInLocalStorage from '../../assets/functions/localStorageChecker
 
 const Card = ({title , caption, slug , buttonText , coverPhoto , finishStatus}) => {
     return (
-            <div style={{width:"350px" , overflow:"hidden"}} className='lbf-card border-gray-800 bg-gray-850 mb-3'>
+            <div style={{width:"350px" , overflow:"hidden"}} className='lbf-card border-gray-800 bg-white mb-3'>
             <div className='lbf-card-image-article'>
                 <Image
                  className='w-100 border'
