@@ -28,7 +28,7 @@ const CourseContent = ({testStarted , setTestStarted , testFinished , setTestFin
             </> 
             :<></>
            }
-            <ShareSecton />
+            <ShareSecton slug={courseSlug} />
         </div>
     );
 };

@@ -21,34 +21,39 @@ export default function CertificateGenerator({ reportData }) {
 
     // 📌 دریافت تاریخ شمسی با moment-jalaali
     const persianDate = moment().format("jYYYY/jMM/jDD").replace(/\d/g, (d) => "۰۱۲۳۴۵۶۷۸۹"[d]).split('').reverse().join('');
-
+    function generateLetterNumber(unitCode = '12') {
+      const randomNumber = Math.floor(10000000 + Math.random() * 90000000); // عدد 8 رقمی تصادفی
+      const resultNumber = `${unitCode}/${randomNumber}`
+      return resultNumber.replace(/\d/g, (d) => "۰۱۲۳۴۵۶۷۸۹"[d]).split('').reverse().join('');
+  }
+  
     firstPage.drawText(reportData.userLocalName , {
       x: 518,
-      y: 271,
+      y: 275,
       size: 14,
       font: customFont,
       color: rgb(0, 0, 0),
     });
 
     firstPage.drawText(reportData.courseName , {
-        x: 253,
-        y: 271,
+        x: 225,
+        y: 275,
         size: 13,
         font: customFont,
         color: rgb(0, 0, 0),
       });
 
     firstPage.drawText(reportData.courseTime.replace(/\d/g, (d) => "۰۱۲۳۴۵۶۷۸۹"[d]).split('').reverse().join('') , {
-        x: 130,
-        y: 271,
+        x: 670,
+        y: 235,
         size: 14,
         font: customFont,
         color: rgb(0, 0, 0),
       });
 
     firstPage.drawText(reportData.pointPercent.toString().replace(/\d/g, (d) => "۰۱۲۳۴۵۶۷۸۹"[d]).split('').reverse().join('') , {
-        x: 250,
-        y: 228,
+        x: 100,
+        y: 233,
         size: 14,
         font: customFont,
         color: rgb(0, 0, 0),
@@ -58,6 +63,13 @@ export default function CertificateGenerator({ reportData }) {
     firstPage.drawText(persianDate , {
         x: 130,
         y: 367,
+        size: 14,
+        font: customFont,
+        color: rgb(0, 0, 0),
+      });
+      firstPage.drawText(generateLetterNumber() , {
+        x: 113,
+        y: 338,
         size: 14,
         font: customFont,
         color: rgb(0, 0, 0),

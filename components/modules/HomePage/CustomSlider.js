@@ -19,32 +19,16 @@ const CustomSlider = () => {
             <Carousel indicators={false}>
         <Carousel.Item
               className='rounded'>
-              <Link href={`/articles/evolve-books`}>
+              <Link href={`/articles/fanavari-va-tadris`}>
               <div className='image-container'>
                 <Image
                 className="d-block w-100 img-fluid"
-                src={`/images/public.png`}
+                src={`/images/articles/coverPhoto/fanavari-va-tadris.png`}
                 alt="Evolve-books-coverphoto"
                 width={1000} height={400}
                 style={{width:"100%"}}
               />
-              <p className='carousel-caption-p'>معرفی کتاب های Evolve</p>
-              </div>
-              </Link>
-          </Carousel.Item>
-          <Carousel.Item
-              className='rounded'>
-              <Link href={`/articles/cefr-scales`}>
-              <div className='image-container'>
-                <Image
-                className="d-block w-100 img-fluid"
-                src={`/images/public.png
-                  `}
-                alt="CEFR-SCALES-Coverphoto"
-                width={1000} height={400}
-                style={{width:"100%"}}
-              />
-              <p className='carousel-caption-p'>معرفی مقیاس‌های CEFR</p>
+              <p className='carousel-caption-p'>فناوری و ندریس</p>
               </div>
               </Link>
           </Carousel.Item>
