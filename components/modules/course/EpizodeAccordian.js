@@ -2,6 +2,7 @@ import React from "react";
 import { Accordion } from "react-bootstrap";
 
 const EpizodeAccordian = ({ caption, videoSrc }) => {
+  console.log(videoSrc)
   return (
     <Accordion className="w-100 mb-3">
       <Accordion.Item eventKey="0">
@@ -9,7 +10,7 @@ const EpizodeAccordian = ({ caption, videoSrc }) => {
           <span className="w-100 text-end fw-bold ps-3">{caption}</span>
         </Accordion.Header>
         <Accordion.Body className="rounded" style={{ backgroundColor: "#f0f0f0" }}>
-          <video controls width="100%">
+          <video controls width="100%" controlsList="nodownload"  disablePictureInPicture onContextMenu={(e) => e.preventDefault()} >
             <source src={videoSrc} type="video/mp4" />
             مرورگر شما از ویدیو پشتیبانی نمی‌کند.
           </video>

@@ -3,16 +3,7 @@ import EpizodeAccordian from './EpizodeAccordian';
 import { Accordion } from "react-bootstrap";
 
 const CourseEpizodes = ({courseEpizodes}) => {
-    const courseData=[
-        {
-            caption:"قسمت اول: معرفی دوره" ,
-            videoSrc:"/videos/word-intro.mp4"
-        },
-        {
-            caption:"قسمت دوم: نصب نرم افزار" ,
-            videoSrc:"/videos/word-intro.mp4"
-        }
-    ]
+    console.log(courseEpizodes)
     return (
         <div className='mt-2 d-flex justify-content-center align-items-center flex-column' >
                       <span
@@ -24,7 +15,7 @@ const CourseEpizodes = ({courseEpizodes}) => {
           style={{fontSize:"14px" , color:"#464749" , 
           fontFamily:"KalamehWeb-Medium"}} >برای مشاهده هر قسمت، روی آن ضربه بزنید تا کشو باز شود</span>
            {
-            courseEpizodes.map( i => <EpizodeAccordian key={i.caption} caption={i.caption} videoSrc={i.videoSrc} />)
+            courseEpizodes.map( i => <EpizodeAccordian key={i.caption} caption={i.caption} videoSrc={i.src} />)
            }
         </div>
     );
